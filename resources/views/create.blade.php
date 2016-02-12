@@ -64,8 +64,7 @@
 
                         <div class="form-group">
                             <br />
-                            <button type="submit" class="btn btn-orange-border btn-lg btn-block" >Submit Mod!</button>
-                            <!-- Sean cannot figure out how to make this not disabled. I'm sorry muffin -->
+                            <button type="submit" class="btn btn-lg btn-block" >Submit Duel!</button>
                         </div>
                     </form>
 
