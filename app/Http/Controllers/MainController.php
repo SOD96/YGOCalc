@@ -69,7 +69,7 @@ class MainController extends Controller
         $this->validate($r, [
             'name'          =>  'max:250',
             'password'   =>  'required',
-            'players'     =>  'required',
+            'players'     =>  'required|max:20',
         ]);
 
         // Gets the name, if it's null it will change it to a random string.
