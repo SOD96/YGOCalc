@@ -11,9 +11,17 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('welcome');
 });
+=======
+Route::get('/', 'MainController@showIndex');
+Route::get('/about', 'MainController@showAbout');
+Route::get('/create', 'MainController@showCreation');
+Route::post('/create', 'MainController@createDuel');
+Route::get('/duel/{id}', 'MainController@showGame');
+>>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +37,7 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function () {
     //
 });
+<<<<<<< HEAD
+=======
+Route::post('/duel/{id}/modify/{id2}', 'MainController@modifyPlayer');
+>>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050

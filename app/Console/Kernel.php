@@ -13,7 +13,11 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
+<<<<<<< HEAD
         // Commands\Inspire::class,
+=======
+        Commands\Inspire::class,
+>>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
     ];
 
     /**
@@ -24,7 +28,12 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+<<<<<<< HEAD
         // $schedule->command('inspire')
         //          ->hourly();
+=======
+        $schedule->command('inspire')
+                 ->hourly();
+>>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
     }
 }

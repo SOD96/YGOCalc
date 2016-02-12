@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Laravel PHP Framework
+=======
+## Laravel PHP Framework
+>>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
@@ -22,6 +26,10 @@ Thank you for considering contributing to the Laravel framework! The contributio
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
+<<<<<<< HEAD
 ## License
+=======
+### License
+>>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
