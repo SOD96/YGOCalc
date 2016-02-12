@@ -6,10 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-<<<<<<< HEAD
-=======
         "laravelcollective/html": "5.2.*",
->>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
         "laravel/framework": "5.2.*"
     },
     "require-dev": {
@@ -18,10 +15,6 @@
         "phpunit/phpunit": "~4.0",
         "symfony/css-selector": "2.8.*|3.0.*",
         "symfony/dom-crawler": "2.8.*|3.0.*"
-<<<<<<< HEAD
-=======
-
->>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
     },
     "autoload": {
         "classmap": [

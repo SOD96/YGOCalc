@@ -4,13 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "hash": "ea1fee525914154e6d6bbf071697b5a1",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
-=======
-    "hash": "cfb8b2c6e1d93e8ed43cd608823a685d",
+    "hash": "38690f8558fda9186fd82be98ea0a507",
     "content-hash": "12de5b00c895c1f7e10b66b629ab5450",
->>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -313,7 +308,6 @@
         },
         {
             "name": "laravel/framework",
-<<<<<<< HEAD
             "version": "v5.2.15",
             "source": {
                 "type": "git",
@@ -324,18 +318,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/78fafb78d35c617e24630f4e099746effc42c787",
                 "reference": "78fafb78d35c617e24630f4e099746effc42c787",
-=======
-            "version": "v5.2.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "ce63ba53d4891bdbb5e1aaeced1b5dd34edbc86f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ce63ba53d4891bdbb5e1aaeced1b5dd34edbc86f",
-                "reference": "ce63ba53d4891bdbb5e1aaeced1b5dd34edbc86f",
->>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
                 "shasum": ""
             },
             "require": {
@@ -450,10 +432,7 @@
                 "framework",
                 "laravel"
             ],
-<<<<<<< HEAD
             "time": "2016-02-12 14:59:18"
-=======
-            "time": "2016-02-03 14:19:04"
         },
         {
             "name": "laravelcollective/html",
@@ -508,7 +487,6 @@
             "description": "HTML and Form Builders for the Laravel Framework",
             "homepage": "http://laravelcollective.com",
             "time": "2016-01-27 22:29:54"
->>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
         },
         {
             "name": "league/flysystem",
@@ -2421,7 +2399,6 @@
         },
         {
             "name": "phpunit/phpunit",
-<<<<<<< HEAD
             "version": "4.8.23",
             "source": {
                 "type": "git",
@@ -2432,18 +2409,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6e351261f9cd33daf205a131a1ba61c6d33bd483",
                 "reference": "6e351261f9cd33daf205a131a1ba61c6d33bd483",
-=======
-            "version": "4.8.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "dfb11aa5236376b4fc63853cf746af39fe780e72"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/dfb11aa5236376b4fc63853cf746af39fe780e72",
-                "reference": "dfb11aa5236376b4fc63853cf746af39fe780e72",
->>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
                 "shasum": ""
             },
             "require": {
@@ -2502,11 +2467,7 @@
                 "testing",
                 "xunit"
             ],
-<<<<<<< HEAD
             "time": "2016-02-11 14:56:33"
-=======
-            "time": "2016-02-02 09:01:21"
->>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
         },
         {
             "name": "phpunit/phpunit-mock-objects",

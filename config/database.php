@@ -62,10 +62,8 @@ return [
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict'    => false,
-<<<<<<< HEAD
             'engine'    => null,
-=======
->>>>>>> 80a808e0adfe82b37a87e3ec6525c40a7edd5050
+
         ],
 
         'pgsql' => [
