@@ -27,9 +27,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Welcome to {{$game->name}}</h1>
-               
-                <p> Players: {{$game->players}} </p>
-                        @foreach($players as $player)
+                    @foreach($players as $player)
                         <div class="col-md-3">
                             <div class="panel panel-default">
                                 <div class="panel-body">
@@ -46,12 +44,16 @@
                                                 <input type="integer" name="points" class="form-control" placeholder="1000" />
                                             </div>
                                             <div class="form-group">
-                                                <label>Change Duelist</label>
+                                                <label>Name</label>
                                                 <input type="text" name="name" class="form-control" placeholder="Yami" />
                                             </div>
                                             <div class="form-group">
-                                                <label>Change Deck</label>
-                                                <input type="text" name="deck" class="form-control" placeholder="Orichalcos" />
+                                                <label>Add a Note</label>
+                                                <input type="text" name="note" class="form-control" placeholder="Attacked with ..." />
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Deck</label>
+                                                <input type="text" name="deck" class="form-control" placeholder="Cyber Dragon" />
                                             </div>
                                             <div class="form-group">
                                                 <label>Add or Remove</label>
@@ -77,6 +79,32 @@
                         @endforeach
                 </div>
             </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2> Battle Log </h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Note</th>
+                                <th>Lifepoints</th>
+                                <th>Added/Removed/Killed </th>
+                            </tr>
+                        </thead>
+                            <tbody>
+                                @foreach($logs as $log)                            
+                                <tr>
+                                    <td>{{$log->name}}</td>
+                                    <td>{{$log->note}}</td>
+                                    <td>{{$log->lifepoints}}</td>
+                                    <td>{{$log->lifeadd}}</td>
+                                </tr>
+                                @endforeach                                
+                            </tbody>
+                    </table>
+            </div>
+        </div>
              @if($request->has('password'))
 
                 @else

@@ -2,6 +2,7 @@
 
 use App\Game,
     App\Players,
+    App\Logs,
     App\User;
 
 use View;
@@ -27,7 +28,7 @@ class MainController extends Controller
      */
     public function showIndex()
     {
-        $game = Game::all();
+        $game = Game::where('active', '=', '1')->orderBy('id', 'asc')->get();
         return view('index', [
             'game'      => $game,
         ]);
@@ -50,14 +51,18 @@ class MainController extends Controller
         $game = Game::where('id', '=', $id)->firstOrFail();
         if ($r->has('password')){
             if($r->input('password') !== $game->password){
-                return 404;
+                return "Password Incorrect";
             }
         }
+        $logs = Logs::where('duel_id', '=', $game->id)->get();
+
+
         //Gets the players
         $players = Players::where('duel_id', '=', $game->id)->get();
         return view('game', [
             'game'      => $game,
             'players'   =>$players,
+            'logs'      =>$logs,
             'request'   => $r,
         ]);
     }
@@ -83,6 +88,7 @@ class MainController extends Controller
             'name'              => $name,
             'password'          => $r->input('password'),
             'players'           => $r->input('players'),
+            'active'            => 1,
         ]);
 
 
@@ -92,6 +98,7 @@ class MainController extends Controller
             'name'              => str_random(12),
             'lifepoints'        => "8000",
             'duel_id'           => $mod->id,
+            'active'            => 1,
         ]);
         }
 
@@ -155,6 +162,16 @@ public function modifyPlayer($id,$id2,Request $r)
         }
 
         $game->save();
+
+        // Add our mod to the database!
+        $log = Logs::create([
+            'name'              => $game->name,
+            'note'              => $r->input('note'),
+            'lifepoints'        => $r->input('points'),
+            'player_id'         => $id2,
+            'duel_id'           => $id,
+            'lifeadd'           => $r->input('lifeadd'),
+        ]);
 
         return redirect('duel' . "/" . $game->duel_id . "?&password=" . $duel->password);
 

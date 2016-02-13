@@ -31,12 +31,14 @@
                 <p>I created this because we have too many duels with 3v3 or 2v2 and most calculators just don't do it good enough. You know what they say, want something done? Do it yourself.</p>
                 <h1>Latest Duels:</h1>
                 @foreach($game as $duel)
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="panel panel-default">
                             <div class="panel-body">
-                            <p> ID: {{$duel->id}}</p>
-                            <p> Name: {{$duel->name}}</p>
-                            <a href="{{URL::to('duel')}}/{{$duel->id}}" class="btn btn-primary"> Go to duel </a>
+                                <p> ID: {{$duel->id}}</p>
+                                <p> Name: {{$duel->name}}</p>
+                                <p> Date Created: {{$duel->created_at}}
+                                <br />
+                                <a href="{{URL::to('duel')}}/{{$duel->id}}" class="btn btn-primary"> Go to duel </a> 
                             </div>
                         </div>
                     </div>

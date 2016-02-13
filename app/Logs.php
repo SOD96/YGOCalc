@@ -2,21 +2,21 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Game extends Model
+class Logs extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'games';
+    protected $table = 'logs';
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = ['players', 'password', 'name', 'winner', 'active'];
+    protected $fillable = ['name', 'deck', 'note', 'lifepoints', 'active', 'duel_id', 'player_id','lifeadd'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -25,16 +25,13 @@ class Game extends Model
      */
     protected $hidden = [];
     /**
-     * Gets all of the likes associated with this mod.
+     * Gets the game associated with this log
      *
      * @return Model
      */
-    public function duelists()
+    public function game()
     {
-        return $this->belongsToMany('App\Players');
+        return $this->belongsToMany('App\Game');
     }
-    public function logs()
-    {
-        return $this->belongsToMany('App\Logs');
-    }
+
 }

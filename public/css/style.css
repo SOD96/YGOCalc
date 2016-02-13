@@ -5,6 +5,19 @@
  */
 
 body {
+	background-color: #fafafa;
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
+.navbar-inverse {
+    background-color: #222;
+    border-color: #161E29;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}

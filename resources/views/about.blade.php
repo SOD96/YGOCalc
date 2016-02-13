@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="About Yu Gi Oh Calculator">
     <meta name="author" content="">
 
     <title>Yu-Gi-Oh Calculator About Us</title>
@@ -33,7 +33,7 @@
                 <p> <b> Created By Sean for anyone to use </b> </p>
 
                 <p> Twitter: https://twitter.com/spgtvsean </p>
-
+                <p> <b> This site is not related to Konami in any way. </b> </p>
             </div>
         </div>
     </div>

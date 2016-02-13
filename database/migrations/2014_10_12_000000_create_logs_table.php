@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePlayersTable extends Migration
+class CreateLogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,17 +12,20 @@ class CreatePlayersTable extends Migration
      */
     public function up()
     {
-        Schema::create('players', function (Blueprint $table) {
+        Schema::create('logs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->integer('duel_id')->unsigned();
-            $table->string('note')->nullable();
+            $table->integer('player_id')->unsigned();
             $table->string('note')->nullable();
             $table->bigInteger('lifepoints');
             $table->boolean('active')->default(1);
+            $table->string('lifeadd');
             $table->timestamps();
 
             $table->foreign('duel_id')->references('id')->on('games')->onDelete('cascade');
+            $table->foreign('player_id')->references('id')->on('players')->onDelete('cascade');
+
 
         });
     }
@@ -34,6 +37,6 @@ class CreatePlayersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('players');
+        Schema::drop('logs');
     }
 }

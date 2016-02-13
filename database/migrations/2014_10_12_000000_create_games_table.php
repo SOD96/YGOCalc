@@ -18,7 +18,7 @@ class CreateGamesTable extends Migration
             $table->string('password');
             $table->string('name');
             $table->string('winner');
-            $table->boolean('active');
+            $table->boolean('active')->default(1);
             $table->timestamps();
         });
     }
