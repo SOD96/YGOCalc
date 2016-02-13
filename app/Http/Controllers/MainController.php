@@ -28,7 +28,7 @@ class MainController extends Controller
      */
     public function showIndex()
     {
-        $game = Game::where('active', '=', '1')->orderBy('id', 'asc')->get();
+        $game = Game::where('active', '=', '1')->orderBy('id', 'dec')->get();
         return view('index', [
             'game'      => $game,
         ]);
@@ -54,7 +54,7 @@ class MainController extends Controller
                 return "Password Incorrect";
             }
         }
-        $logs = Logs::where('duel_id', '=', $game->id)->get();
+        $logs = Logs::where('duel_id', '=', $game->id)->orderBy('id', 'dec')->get();
 
 
         //Gets the players

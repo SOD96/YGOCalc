@@ -31,7 +31,6 @@
                         <div class="col-md-3">
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <p><b> ID:</b> {{$player->id}} </p>
                                     <p><b> Name:</b> {{$player->name}} </p>    
                                     <p><b> Deck:</b> {{$player->deck}} </p>                                                                    
                                     <p><b> Lifepoints: </b> {{$player->lifepoints}} </p>
