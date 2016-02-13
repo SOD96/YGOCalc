@@ -17,11 +17,10 @@
 
 
 </head>
-
-<body>
-
     @include('templates.nav')
-
+<div class="header-background">
+</div>
+<body>
 
     <!-- Page Content -->
     <div class="container">

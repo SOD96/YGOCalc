@@ -6,9 +6,11 @@
 
 body {
 	background-color: #fafafa;
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
-
+.navbar {
+    min-height: 50px;
+    border: 1px solid transparent;
+}
 .navbar-inverse {
     background-color: #222;
     border-color: #161E29;
@@ -20,4 +22,11 @@ body {
 
 .navbar-inverse .navbar-nav>li>a {
     color: #fff;
+}
+
+.header-background {
+    height: 350px;
+    background: url('http://i.imgur.com/xrRyaKt.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
 }
