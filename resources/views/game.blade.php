@@ -14,6 +14,7 @@
     <!-- Bootstrap Core CSS -->
     {{HTML::style('css/bootstrap.min.css')}}
     {{HTML::style('css/style.css')}}
+    {{HTML::style('css/font-awesome.min.css')}}
 
 
 </head>
@@ -67,7 +68,7 @@
 
                                             <div class="form-group">
                                                 <br />
-                                                <button type="submit" class="btn btn-block " >Submit Changes!</button>
+                                                <button type="submit" class="btn btn-block"> <i class="fa fa-check"> </i> Submit Changes!</button>
                                                 <!-- Sean cannot figure out how to make this not disabled. I'm sorry muffin -->
                                             </div>
                                         </form>
@@ -118,7 +119,7 @@
 
                     <div class="form-group">
                         <br />
-                        <button type="submit" class="btn btn-block " >Confirm</button>
+                        <button type="submit" class="btn btn-block"> <i class="fa fa-check"> </i> Confirm</button>
                         <!-- Sean cannot figure out how to make this not disabled. I'm sorry muffin -->
                     </div>
                 </form>

@@ -14,6 +14,7 @@
     <!-- Bootstrap Core CSS -->
     {{HTML::style('css/bootstrap.min.css')}}
     {{HTML::style('css/style.css')}}
+    {{HTML::style('css/font-awesome.min.css')}}
 
 
 </head>
@@ -39,7 +40,7 @@
                                 <p> <b>Date Created:</b> {{$duel->created_at}}
                                 <p> <b>Players:</b> {{$duel->players}} </p>
                                 <br />
-                                <a href="{{URL::to('duel')}}/{{$duel->id}}" class="btn btn-primary"> Go to duel </a> 
+                                <a href="{{URL::to('duel')}}/{{$duel->id}}" class="btn btn-primary"><i class="fa fa-link"> </i> Go to duel </a> 
                             </div>
                         </div>
                     </div>
