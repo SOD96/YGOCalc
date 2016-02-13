@@ -39,8 +39,8 @@
     </div>
     <!-- /.container -->
 
-    {{HTML::script('js/jquery.js')}}
-    {{HTML::script('js/bootstrap.min.js')}}
+    @include('templates.scripts')
+
 
 
 </body>

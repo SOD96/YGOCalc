@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="View {{$game->name}} Duel here! Yu Gi Oh Calculator">
     <meta name="author" content="">
 
-    <title>YuGiOh Calculator</title>
+    <title>{{$game->name}} Yu-Gi-Oh Calculator</title>
 
     <!-- Bootstrap Core CSS -->
     {{HTML::style('css/bootstrap.min.css')}}
@@ -130,8 +130,8 @@
     </div>
     <!-- /.container -->
 
-    {{HTML::script('js/jquery.js')}}
-    {{HTML::script('js/bootstrap.min.js')}}
+    @include('templates.scripts')
+
 
 
 </body>
