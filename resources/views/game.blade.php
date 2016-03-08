@@ -58,8 +58,8 @@
                                             <div class="form-group">
                                                 <label>Add or Remove</label>
                                                 <select name="lifeadd" class="form-control">
+                                                  <option value="remove">Take Points Away</option>                                                
                                                   <option value="add">Add Points On</option>
-                                                  <option value="remove">Take Points Away</option>
                                                   <option value="killplayer">Kill Player </option>
                                                   <option value="set">Set Points </option>
 
