@@ -22,7 +22,8 @@
 <body>
 
 @include('templates.nav')
-
+<br>
+@include('templates.messages')
     <!-- Page Content -->
     <div class="container">
         <div class="row">
