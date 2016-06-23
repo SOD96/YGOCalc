@@ -6,6 +6,7 @@ use App\Game,
     App\User;
 
 use View;
+use Session;
 
 
 use App\Http\Controllers\Controller;
@@ -51,12 +52,10 @@ class MainController extends Controller
         $game = Game::where('id', '=', $id)->firstOrFail();
         if ($r->has('password')){
             if($r->input('password') !== $game->password){
-                return "Password Incorrect";
+                session::flash('message','Incorrect Password');
             }
         }
         $logs = Logs::where('duel_id', '=', $game->id)->orderBy('id', 'dec')->get();
-
-
         //Gets the players
         $players = Players::where('duel_id', '=', $game->id)->get();
         return view('game', [

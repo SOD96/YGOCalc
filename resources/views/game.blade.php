@@ -106,7 +106,25 @@
             </div>
         </div>
              @if($request->has('password'))
+             @if($request->input('password') != $game->password)
+                <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                <form class="form-horizontal" action="{{URL::to('duel')}}/{{$game->id}}" method="get">
 
+                    <div class="form-group">
+                        <label>Password to Manage this duel</label>
+                        <input type="text" name="password" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <br />
+                        <button type="submit" class="btn btn-block"> <i class="fa fa-check"> </i> Confirm</button>
+                        <!-- Sean cannot figure out how to make this not disabled. I'm sorry muffin -->
+                    </div>
+                </form>
+                </div>   
+                </div>  
+            @endif
                 @else
                 <div class="row">
                 <div class="col-md-6 col-md-offset-3">
