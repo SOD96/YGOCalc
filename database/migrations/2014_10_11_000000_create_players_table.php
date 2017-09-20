@@ -17,7 +17,6 @@ class CreatePlayersTable extends Migration
             $table->string('name');
             $table->integer('duel_id')->unsigned();
             $table->string('note')->nullable();
-            $table->string('note')->nullable();
             $table->bigInteger('lifepoints');
             $table->boolean('active')->default(1);
             $table->timestamps();
