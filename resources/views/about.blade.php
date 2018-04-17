@@ -32,8 +32,9 @@
                 <p> Hey there! Welcome to Yu-Gi-Oh Calculator. I created this site because other ones don't do the job well enough and I have way too much spare time. </p>
                 <p> Want to suggest something? Send me a message using the below social media. </p>
 
-                <p> <a href="https://twitter.com/spgtvsean"> <i class="fa fa-twitter"> </i> My Twitter </a> </p>
-                <p> <a href="mailto:contact@dedihost.net">  <i class="fa fa-envelope"> </i> My Email </a> </p>
+                <p> <a href="https://twitter.com/KaibaSean"> <i class="fa fa-twitter"> </i> My Twitter </a> </p>
+                <p> <a href="https://seanodonnell.co.uk"> <i class="fa fa-twitter"> </i> My Blog </a> </p>
+                <p> <a href="mailto:contact@seanodonnell.co.uk">  <i class="fa fa-envelope"> </i> My Email </a> </p>
                 <p> <b> This site is not related to Konami in any way. </b> This is purely used to keep track of scores in duels. </p>
             </div>
 
